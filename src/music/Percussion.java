@@ -29,7 +29,7 @@ public abstract class Percussion extends Instrument {
      * post: The sound made by the instrument is returned.
      */
     public String makeSound() {
- 	return("...");
+ 	return("papa");
 }
     
 }
