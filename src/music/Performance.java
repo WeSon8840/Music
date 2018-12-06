@@ -15,6 +15,7 @@ public class Performance {
     private Instrument solo;
     private Instrument duet_1, duet_2;
     private Instrument trio_1, trio_2, trio_3;
+    private Instrument quart_1, quart_2, quart_3, quart_4;
 
 
     /**
@@ -51,6 +52,19 @@ public class Performance {
 	arrangement = trio_1.makeSound() + trio_2.makeSound() + trio_3.makeSound();
 }
 
+    
+    /**
+     * constructor
+     * pre: none
+     * post: The members of a quart have been selected.
+     */
+    public Performance(Instrument q1, Instrument q2, Instrument q3, Instrument q4) {
+	quart_1 = q1;
+	quart_2 = q2;
+	quart_3 = q3;
+        quart_4 = q4;
+	arrangement = quart_1.makeSound() + quart_2.makeSound() + quart_3.makeSound() + quart_4.makeSound();
+}
 
     /** 
      * Begins the performance.
